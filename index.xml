@@ -4,8 +4,7 @@
     <title>Introduction on Holu Book</title>
     <link>https://holuyaa.github.io/</link>
     <description>Recent content in Introduction on Holu Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://holuyaa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://holuyaa.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to setup hugo</title>
       <link>https://holuyaa.github.io/posts/how-to-setup-hugo/</link>
