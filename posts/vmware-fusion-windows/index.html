@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Prerequisite # VMware Fusion Public Tech Preview Download &amp; Install # 다운로드를 위해서는 회원 가입이 필요합니다.
+vmware fusion 12 tech preview LINK 다운로드 후에는 m1 mac에 설치합니다.
+Windows 11 on Arm Insider Preview Download # 다운로드하기 위해서는 Microsoft 계정으로 Windows Insider Program을 register 해야됩니다.
+Windows 11 on Arm Insider Preview LINK Windows 11 on Arm Insider Preview VHDX -&gt; VMDK 변환 # $ brew install qemu $ qemu-img convert -O vmdk &lt;다운로드 한 vhdx 파일명&gt; &lt;변경할 vmdk 파일명&gt; # 예를 들어 $ qemu-img convert -O vmdk Windows11_InsiderPreview_Client_ARM64_en-us_22598.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="How to install Windows 11 on Arm Insider Preview" />
+<meta property="og:description" content="Prerequisite # VMware Fusion Public Tech Preview Download &amp; Install # 다운로드를 위해서는 회원 가입이 필요합니다.
+vmware fusion 12 tech preview LINK 다운로드 후에는 m1 mac에 설치합니다.
+Windows 11 on Arm Insider Preview Download # 다운로드하기 위해서는 Microsoft 계정으로 Windows Insider Program을 register 해야됩니다.
+Windows 11 on Arm Insider Preview LINK Windows 11 on Arm Insider Preview VHDX -&gt; VMDK 변환 # $ brew install qemu $ qemu-img convert -O vmdk &lt;다운로드 한 vhdx 파일명&gt; &lt;변경할 vmdk 파일명&gt; # 예를 들어 $ qemu-img convert -O vmdk Windows11_InsiderPreview_Client_ARM64_en-us_22598." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://holuyaa.github.io/posts/vmware-fusion-windows/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-18T00:14:24+09:00" />
+
+<title>How to install Windows 11 on Arm Insider Preview | Holu Book</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.89a77f7e702a8626749b948bbfb01109823daf6c1246ca407d1378833494c402.css" integrity="sha256-iad/fnAqhiZ0m5SLv7ARCYI9r2wSRspAfRN4gzSUxAI=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.b3b1b72e24eb6f0069a63ebf6a827f8f8118326de0dbfe2a10ecd012483817db.js" integrity="sha256-s7G3LiTrbwBppj6/aoJ/j4EYMm3g2/4qEOzQEkg4F9s=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Holu Book</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>How to install Windows 11 on Arm Insider Preview</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisite">Prerequisite</a>
+      <ul>
+        <li><a href="#vmware-fusion-public-tech-preview-download--install">VMware Fusion Public Tech Preview Download &amp; Install</a></li>
+        <li><a href="#windows-11-on-arm-insider-preview-download">Windows 11 on Arm Insider Preview Download</a></li>
+        <li><a href="#windows-11-on-arm-insider-preview-vhdx---vmdk-변환">Windows 11 on Arm Insider Preview VHDX -&gt; VMDK 변환</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#step-1-vmware-fusion-에서-vmdk-파일-선택">Step 1: VMware Fusion 에서 vmdk 파일 선택</a></li>
+        <li><a href="#step-2-windows-설치">Step 2: Windows 설치</a></li>
+        <li><a href="#trouble-shooting">Trouble Shooting</a></li>
+      </ul>
+    </li>
+    <li><a href="#tips">Tips</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/vmware-fusion-windows/">How to install Windows 11 on Arm Insider Preview</a>
+  </h1>
+  
+  <h5>September 17, 2022</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/m1-mac/">m1 mac</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/m1-mac/">m1 mac</a>, 
+      <a href="/tags/vmware-fusion-12-tech-preview/">vmware fusion 12 tech preview</a>, 
+      <a href="/tags/Windows-Insider-Preview-ARM64/">Windows Insider Preview ARM64</a>
+  </div>
+  
+
+
+
+<h1 id="prerequisite">
+  Prerequisite
+  <a class="anchor" href="#prerequisite">#</a>
+</h1>
+<hr>
+<h2 id="vmware-fusion-public-tech-preview-download--install">
+  VMware Fusion Public Tech Preview Download &amp; Install
+  <a class="anchor" href="#vmware-fusion-public-tech-preview-download--install">#</a>
+</h2>
+<p>다운로드를 위해서는 회원 가입이 필요합니다.</p>
+<ul>
+<li>vmware fusion 12 tech preview 
+  <a href="http://vmware.com/go/get-fusion-m1">LINK</a></li>
+</ul>
+<p>다운로드 후에는 m1 mac에 설치합니다.</p>
+<h2 id="windows-11-on-arm-insider-preview-download">
+  Windows 11 on Arm Insider Preview Download
+  <a class="anchor" href="#windows-11-on-arm-insider-preview-download">#</a>
+</h2>
+<p>다운로드하기 위해서는 Microsoft 계정으로 Windows Insider Program을 register 해야됩니다.</p>
+<ul>
+<li>Windows 11 on Arm Insider Preview 
+  <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64">LINK</a></li>
+</ul>
+<h2 id="windows-11-on-arm-insider-preview-vhdx---vmdk-변환">
+  Windows 11 on Arm Insider Preview VHDX -&gt; VMDK 변환
+  <a class="anchor" href="#windows-11-on-arm-insider-preview-vhdx---vmdk-%eb%b3%80%ed%99%98">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ brew install qemu
+</span></span><span style="display:flex;"><span>$ qemu-img convert -O vmdk &lt;다운로드 한 vhdx 파일명&gt; &lt;변경할 vmdk 파일명&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 예를 들어</span>
+</span></span><span style="display:flex;"><span>$ qemu-img convert -O vmdk Windows11_InsiderPreview_Client_ARM64_en-us_22598.VHDX Windows11_InsiderPreview_Client_ARM64_en-us_22598.vmdk
+</span></span></code></pre></div><h1 id="installation">
+  Installation
+  <a class="anchor" href="#installation">#</a>
+</h1>
+<hr>
+<h2 id="step-1-vmware-fusion-에서-vmdk-파일-선택">
+  Step 1: VMware Fusion 에서 vmdk 파일 선택
+  <a class="anchor" href="#step-1-vmware-fusion-%ec%97%90%ec%84%9c-vmdk-%ed%8c%8c%ec%9d%bc-%ec%84%a0%ed%83%9d">#</a>
+</h2>
+<ol>
+<li>VMware Fusion 에서 new 실행</li>
+<li>&ldquo;Create a custom virtual machine&rdquo; 선택 후 continue</li>
+<li>&ldquo;Microsoft Windows -&gt; Windows 11 64-bit Arm&rdquo; 선택 후 continue</li>
+<li>UEFI 선택, UEFI Secure Boot 해제 후 continue</li>
+<li>&ldquo;Only the files needed to support a TPM are encrypted. (.nvram, .vmss, .vmem, .vmx, .vmsn)&rdquo; 선택</li>
+<li>Password &amp; Verify 입력 후 continue</li>
+<li>&ldquo;Use an existing virtual disk&rdquo; 선택 후 &ldquo;Choose virtual disk&hellip;&rdquo; 클</li>
+<li>변환 해 둔 vmdk 파일 선택</li>
+</ol>
+<h2 id="step-2-windows-설치">
+  Step 2: Windows 설치
+  <a class="anchor" href="#step-2-windows-%ec%84%a4%ec%b9%98">#</a>
+</h2>
+<ol>
+<li>&ldquo;Is this the right country or region?&rdquo; 화면에서 Shift + F10 입력 후 터미널로 진입</li>
+<li>&ldquo;OOBE\BYPSSNRO&rdquo; 입력 후 엔터</li>
+</ol>
+<pre tabindex="0"><code>PS C:\Window\System32&gt; OOBE\BYPASSNRO
+</code></pre><ol start="3">
+<li>네트워크 연결 화면에서 &ldquo;I don&rsquo;t have internet&rdquo; 클릭</li>
+<li>&ldquo;Continue with limited setup&rdquo; 클릭</li>
+<li>VMWare Fusion에서 &ldquo;Virtual Machine&rdquo; -&gt; &ldquo;Reinstall VMWare Tools&rdquo;</li>
+<li>관리자 모드로 터미널 실행 후 아래 명령어 입력</li>
+</ol>
+<pre tabindex="0"><code>PS C:\Windows\system32&gt; Set-ExecutionPolicy RemoteSigned
+</code></pre><ol start="8">
+<li>윈도우 탐색기 -&gt; DVD Drive (D:) VMware Tools -&gt; setup 파일 우클릭 -&gt; Run with Powershell</li>
+<li>재부팅</li>
+</ol>
+<h2 id="trouble-shooting">
+  Trouble Shooting
+  <a class="anchor" href="#trouble-shooting">#</a>
+</h2>
+<p>네트워크가 잘 동작하면 굳이 할 필요가 없지만
+혹시 네트워크 연결이 안되서 인터넷이 안되는 분들은 아래 내용 확인</p>
+<details>
+<summary>접기/펼치기</summary>
+<!-- summary 아래 한칸 공백 두어야 함 -->
+<p>혹시 네트워크 연결이 안되서 인터넷이 안되는 분들은</p>
+<pre tabindex="0"><code>bcdedit /debug on
+bcdedit /dbgsettings net hostip:10.0.0.1 port:55555
+</code></pre></details>
+<h1 id="tips">
+  Tips
+  <a class="anchor" href="#tips">#</a>
+</h1>
+<hr>
+<ul>
+<li>맥 VMware Fusion 속에서 윈도우10 속도 올리는 법: 
+  <a href="https://www.clien.net/service/board/lecture/15536102">LINK</a></li>
+</ul>
+<p>VMware Fusion 경로가 아래와 같음</p>
+<blockquote>
+<p>Applications/VMware\ Fusion\ Tech\ Preview.app/Contents/Library/</p>
+</blockquote>
+<p>실행할 때 / 종료할 때 Password를 입력해야 합니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vmrun -vp &lt;password&gt; start &lt;가상 윈도우 파일 절대 경로&gt;
+</span></span><span style="display:flex;"><span>$ vmrun -vp &lt;password&gt; suspend &lt;가상 윈도우 파일 절대 경로&gt;
+</span></span></code></pre></div><h1 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h1>
+<hr>
+<p>
+  <a href="https://naelonambul.tistory.com/42">https://naelonambul.tistory.com/42</a>
+
+  <a href="https://www.youtube.com/watch?v=Pt5FIO_I-qo">https://www.youtube.com/watch?v=Pt5FIO_I-qo</a>
+
+  <a href="https://www.clien.net/service/board/lecture/15536102">https://www.clien.net/service/board/lecture/15536102</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisite">Prerequisite</a>
+      <ul>
+        <li><a href="#vmware-fusion-public-tech-preview-download--install">VMware Fusion Public Tech Preview Download &amp; Install</a></li>
+        <li><a href="#windows-11-on-arm-insider-preview-download">Windows 11 on Arm Insider Preview Download</a></li>
+        <li><a href="#windows-11-on-arm-insider-preview-vhdx---vmdk-변환">Windows 11 on Arm Insider Preview VHDX -&gt; VMDK 변환</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#step-1-vmware-fusion-에서-vmdk-파일-선택">Step 1: VMware Fusion 에서 vmdk 파일 선택</a></li>
+        <li><a href="#step-2-windows-설치">Step 2: Windows 설치</a></li>
+        <li><a href="#trouble-shooting">Trouble Shooting</a></li>
+      </ul>
+    </li>
+    <li><a href="#tips">Tips</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,8 +12,8 @@
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://holuyaa.github.io/posts/how-to-setup-hugo/</guid>
-      <description>Step 1: github에서 2개의 repository 생성 #    hugo 로 생성한 site의 소스코드를 위한 저장소 렌더링된 버전의 Hugo 웹사이트를 포함할 .github.io 저장소  private으로 blog, public으로 holuyaa.github.io를 생성했다. github id와 다른 abc.github.io로 생성하면 안된다. 꼭 github id와 동일 해야한다.
-Step 2: Install Hugo #   $ brew install hugo Step 3: Create a New Site #   # HOME directory로 이동 $ cd ~ $ mkdir blog $ cd blog $ hugo new site .</description>
+      <description>Step 1: github에서 2개의 repository 생성 # hugo 로 생성한 site의 소스코드를 위한 저장소 렌더링된 버전의 Hugo 웹사이트를 포함할 .github.io 저장소 private으로 blog, public으로 holuyaa.github.io를 생성했다. github id와 다른 abc.github.io로 생성하면 안된다. 꼭 github id와 동일 해야한다.
+Step 2: Install Hugo # $ brew install hugo Step 3: Create a New Site # # HOME directory로 이동 $ cd ~ $ mkdir blog $ cd blog $ hugo new site .</description>
     </item>
     
   </channel>
